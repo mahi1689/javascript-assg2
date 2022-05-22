@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Square root</title>
+</head>
+<body>
+    <script>
+               function composedValue(square,double,value){
+                var res1=double(value);
+                var res2=square(res1);
+                
+                console.log("Composed result is",res2);
+            }
+
+            function square(x){
+                return x*x;
+            }
+
+            function double(x){
+                return x*2;
+            }
+
+            composedValue(square,double,5);
+
+        </script>
+</body>
+</html>
